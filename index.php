@@ -18,18 +18,20 @@ $x=0;
 while ($x++<10) 
 echo $x;
 echo '<br>';
+
 // do-while
 $i = 0;
 do {
     echo $i;
 } while ($i > 0);
+
 // foreach
 $my_arr = array(1, 2, 3, 4, 5);
    
   foreach ($my_arr as $value) {
     echo $value, " ";
   }
-
+// if
 $test = 82; 
 if($test > 90)
 {
@@ -51,6 +53,11 @@ else
     echo "Пересдайте текст";
     echo '<br>';
 }
+
+// for
+for($i=1;$i<=10;$i++)
+print $i.',';
+echo '<br>';
 
 /**
  * Добавляет привет к имени
@@ -79,20 +86,20 @@ class  Person
         $this->age = $age;
         $this->children = $children;
     }
-    public function setChildren($setChildren){
-        $this->children = $setChildren;
+    public function setChildren($children){
+        $this->children = $children;
     }
     public function getChildren(){
         return $this->children;
     }
-    public function setAge($setAge){
-        $this->age = $setAge;
+    public function setAge($age){
+        $this->age = $age;
     }
     public function getAge(){
         return $this->age;
     }
-    public function setCity($setcity){
-        $this->city = $setcity;
+    public function setCity($city){
+        $this->city = $city;
     }
     public function getCity(){
         return $this->city;
