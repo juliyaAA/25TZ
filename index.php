@@ -62,11 +62,11 @@ echo '<br>';
 /**
  * Добавляет привет к имени
 */
-function Name($name)
+function getHello($name)
 {
     return $name . '-Привет';
 }
-var_dump (Name('Юля'));
+var_dump (getHello('Юля'));
 echo '<br>';
 
 class  Person
